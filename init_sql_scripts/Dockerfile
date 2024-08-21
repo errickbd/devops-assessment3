@@ -1,5 +1,6 @@
 # Use the official PostgreSQL image as the base image
-FROM postgres:16.4-bookworm
+# FROM postgres:16.4-bookworm
+FROM postgres:11.2-alpine
 
 # Set environment variables for the database
 # These are optional but can be useful for setting up the database

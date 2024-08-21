@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT;
+const port = parseInt(process.env.PORT);
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL, 
